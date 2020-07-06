@@ -1,95 +1,145 @@
-# -*- coding: utf-8 -*-
+/********************************************************************************
+** Form generated from reading UI file 'admin_credentials.ui'
+**
+** Created by: Qt User Interface Compiler version 5.12.9
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
 
-# Form implementation generated from reading ui file 'ui/admin_credentials.ui'
-#
-# Created by: PyQt5 UI code generator 5.5.1
-#
-# WARNING! All changes made in this file will be lost!
+#ifndef ADMIN_CREDENTIALS_H
+#define ADMIN_CREDENTIALS_H
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 
-class Ui_AdministratorCredentials(object):
-    def setupUi(self, AdministratorCredentials):
-        AdministratorCredentials.setObjectName("AdministratorCredentials")
-        AdministratorCredentials.resize(366, 170)
-        self.gridLayout = QtWidgets.QGridLayout(AdministratorCredentials)
-        self.gridLayout.setObjectName("gridLayout")
-        self.label = QtWidgets.QLabel(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(1)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setPointSize(16)
-        self.label.setFont(font)
-        self.label.setObjectName("label")
-        self.gridLayout.addWidget(self.label, 0, 0, 1, 4)
-        self.label_2 = QtWidgets.QLabel(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.MinimumExpanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(1)
-        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
-        self.label_2.setSizePolicy(sizePolicy)
-        self.label_2.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_2.setObjectName("label_2")
-        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
-        self.adminName = QtWidgets.QLineEdit(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.adminName.sizePolicy().hasHeightForWidth())
-        self.adminName.setSizePolicy(sizePolicy)
-        self.adminName.setObjectName("adminName")
-        self.gridLayout.addWidget(self.adminName, 1, 1, 1, 3)
-        self.label_3 = QtWidgets.QLabel(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.MinimumExpanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(1)
-        sizePolicy.setHeightForWidth(self.label_3.sizePolicy().hasHeightForWidth())
-        self.label_3.setSizePolicy(sizePolicy)
-        self.label_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_3.setObjectName("label_3")
-        self.gridLayout.addWidget(self.label_3, 2, 0, 1, 1)
-        self.passwordLineEdit = QtWidgets.QLineEdit(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.passwordLineEdit.sizePolicy().hasHeightForWidth())
-        self.passwordLineEdit.setSizePolicy(sizePolicy)
-        self.passwordLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
-        self.passwordLineEdit.setObjectName("passwordLineEdit")
-        self.gridLayout.addWidget(self.passwordLineEdit, 2, 1, 1, 3)
-        spacerItem = QtWidgets.QSpacerItem(158, 17, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem, 3, 0, 1, 2)
-        self.cancelButton = QtWidgets.QPushButton(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.cancelButton.sizePolicy().hasHeightForWidth())
-        self.cancelButton.setSizePolicy(sizePolicy)
-        self.cancelButton.setAutoDefault(False)
-        self.cancelButton.setObjectName("cancelButton")
-        self.gridLayout.addWidget(self.cancelButton, 3, 2, 1, 1)
-        self.authUserButton = QtWidgets.QPushButton(AdministratorCredentials)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.MinimumExpanding)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.authUserButton.sizePolicy().hasHeightForWidth())
-        self.authUserButton.setSizePolicy(sizePolicy)
-        self.authUserButton.setDefault(True)
-        self.authUserButton.setObjectName("authUserButton")
-        self.gridLayout.addWidget(self.authUserButton, 3, 3, 1, 1)
+QT_BEGIN_NAMESPACE
 
-        self.retranslateUi(AdministratorCredentials)
-        QtCore.QMetaObject.connectSlotsByName(AdministratorCredentials)
+class Ui_AdministratorCredentials
+{
+public:
+    QGridLayout *gridLayout;
+    QLabel *label;
+    QLabel *label_2;
+    QLineEdit *adminName;
+    QLabel *label_3;
+    QLineEdit *passwordLineEdit;
+    QSpacerItem *horizontalSpacer;
+    QPushButton *cancelButton;
+    QPushButton *authUserButton;
 
-    def retranslateUi(self, AdministratorCredentials):
-        _translate = QtCore.QCoreApplication.translate
-        AdministratorCredentials.setWindowTitle(_translate("AdministratorCredentials", "Administrator Credentials Required"))
-        self.label.setText(_translate("AdministratorCredentials", "Please enter administrator credentials for: "))
-        self.label_2.setText(_translate("AdministratorCredentials", "Name: "))
-        self.label_3.setText(_translate("AdministratorCredentials", "Password:"))
-        self.cancelButton.setText(_translate("AdministratorCredentials", "Cancel"))
-        self.authUserButton.setText(_translate("AdministratorCredentials", "Ok"))
+    void setupUi(QDialog *AdministratorCredentials)
+    {
+        if (AdministratorCredentials->objectName().isEmpty())
+            AdministratorCredentials->setObjectName(QString::fromUtf8("AdministratorCredentials"));
+        AdministratorCredentials->resize(366, 170);
+        gridLayout = new QGridLayout(AdministratorCredentials);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        label = new QLabel(AdministratorCredentials);
+        label->setObjectName(QString::fromUtf8("label"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(1);
+        sizePolicy.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy);
+        QFont font;
+        font.setPointSize(16);
+        label->setFont(font);
 
+        gridLayout->addWidget(label, 0, 0, 1, 4);
+
+        label_2 = new QLabel(AdministratorCredentials);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::MinimumExpanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(1);
+        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy1);
+        label_2->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout->addWidget(label_2, 1, 0, 1, 1);
+
+        adminName = new QLineEdit(AdministratorCredentials);
+        adminName->setObjectName(QString::fromUtf8("adminName"));
+        QSizePolicy sizePolicy2(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(adminName->sizePolicy().hasHeightForWidth());
+        adminName->setSizePolicy(sizePolicy2);
+
+        gridLayout->addWidget(adminName, 1, 1, 1, 3);
+
+        label_3 = new QLabel(AdministratorCredentials);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        sizePolicy1.setHeightForWidth(label_3->sizePolicy().hasHeightForWidth());
+        label_3->setSizePolicy(sizePolicy1);
+        label_3->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        gridLayout->addWidget(label_3, 2, 0, 1, 1);
+
+        passwordLineEdit = new QLineEdit(AdministratorCredentials);
+        passwordLineEdit->setObjectName(QString::fromUtf8("passwordLineEdit"));
+        sizePolicy2.setHeightForWidth(passwordLineEdit->sizePolicy().hasHeightForWidth());
+        passwordLineEdit->setSizePolicy(sizePolicy2);
+        passwordLineEdit->setEchoMode(QLineEdit::Password);
+
+        gridLayout->addWidget(passwordLineEdit, 2, 1, 1, 3);
+
+        horizontalSpacer = new QSpacerItem(158, 17, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer, 3, 0, 1, 2);
+
+        cancelButton = new QPushButton(AdministratorCredentials);
+        cancelButton->setObjectName(QString::fromUtf8("cancelButton"));
+        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(cancelButton->sizePolicy().hasHeightForWidth());
+        cancelButton->setSizePolicy(sizePolicy3);
+        cancelButton->setAutoDefault(false);
+
+        gridLayout->addWidget(cancelButton, 3, 2, 1, 1);
+
+        authUserButton = new QPushButton(AdministratorCredentials);
+        authUserButton->setObjectName(QString::fromUtf8("authUserButton"));
+        QSizePolicy sizePolicy4(QSizePolicy::Minimum, QSizePolicy::MinimumExpanding);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(authUserButton->sizePolicy().hasHeightForWidth());
+        authUserButton->setSizePolicy(sizePolicy4);
+
+        gridLayout->addWidget(authUserButton, 3, 3, 1, 1);
+
+
+        retranslateUi(AdministratorCredentials);
+
+        authUserButton->setDefault(true);
+
+
+        QMetaObject::connectSlotsByName(AdministratorCredentials);
+    } // setupUi
+
+    void retranslateUi(QDialog *AdministratorCredentials)
+    {
+        AdministratorCredentials->setWindowTitle(QApplication::translate("AdministratorCredentials", "Administrator Credentials Required", nullptr));
+        label->setText(QApplication::translate("AdministratorCredentials", "Please enter administrator credentials for: ", nullptr));
+        label_2->setText(QApplication::translate("AdministratorCredentials", "Name: ", nullptr));
+        label_3->setText(QApplication::translate("AdministratorCredentials", "Password:", nullptr));
+        cancelButton->setText(QApplication::translate("AdministratorCredentials", "Cancel", nullptr));
+        authUserButton->setText(QApplication::translate("AdministratorCredentials", "Ok", nullptr));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class AdministratorCredentials: public Ui_AdministratorCredentials {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // ADMIN_CREDENTIALS_H

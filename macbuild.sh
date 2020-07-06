@@ -24,7 +24,9 @@ SUDO="/usr/bin/sudo"
 MAKE="/usr/bin/make"
 CS="/usr/bin/codesign"
 
-PYUIC="/usr/local/bin/pyuic5"
+PYUIC="$HOME/Qt5.12.9/5.12.9/clang_64/bin/uic"
+
+# PYUIC="/usr/local/bin/pyuic5"
 
 PYINSTALLER_MAKESPEC="/usr/local/bin/pyi-makespec"
 PYINSTALLER_BUILD="/usr/local/bin/pyinstaller"

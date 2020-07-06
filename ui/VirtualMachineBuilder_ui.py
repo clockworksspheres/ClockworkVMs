@@ -1,60 +1,113 @@
-# -*- coding: utf-8 -*-
+/********************************************************************************
+** Form generated from reading UI file 'VirtualMachineBuilder.ui'
+**
+** Created by: Qt User Interface Compiler version 5.12.9
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
 
-# Form implementation generated from reading ui file 'ui/VirtualMachineBuilder.ui'
-#
-# Created by: PyQt5 UI code generator 5.5.1
-#
-# WARNING! All changes made in this file will be lost!
+#ifndef VIRTUALMACHINEBUILDER_H
+#define VIRTUALMACHINEBUILDER_H
 
-from PyQt5 import QtCore, QtGui, QtWidgets
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QDialogButtonBox>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QMenuBar>
+#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QWidget>
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(325, 250)
-        self.centralwidget = QtWidgets.QWidget(MainWindow)
-        self.centralwidget.setObjectName("centralwidget")
-        self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
-        self.gridLayout.setObjectName("gridLayout")
-        self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setPointSize(24)
-        self.label_4.setFont(font)
-        self.label_4.setObjectName("label_4")
-        self.gridLayout.addWidget(self.label_4, 0, 0, 1, 1)
-        self.packerLabel = QtWidgets.QLabel(self.centralwidget)
-        self.packerLabel.setObjectName("packerLabel")
-        self.gridLayout.addWidget(self.packerLabel, 1, 0, 1, 1)
-        self.boxcutterLabel = QtWidgets.QLabel(self.centralwidget)
-        self.boxcutterLabel.setObjectName("boxcutterLabel")
-        self.gridLayout.addWidget(self.boxcutterLabel, 2, 0, 1, 1)
-        self.osFamily = QtWidgets.QComboBox(self.centralwidget)
-        self.osFamily.setObjectName("osFamily")
-        self.gridLayout.addWidget(self.osFamily, 3, 0, 1, 1)
-        self.osVersions = QtWidgets.QComboBox(self.centralwidget)
-        self.osVersions.setObjectName("osVersions")
-        self.gridLayout.addWidget(self.osVersions, 4, 0, 1, 1)
-        self.buttonBox = QtWidgets.QDialogButtonBox(self.centralwidget)
-        self.buttonBox.setToolTipDuration(30)
-        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Apply|QtWidgets.QDialogButtonBox.Close|QtWidgets.QDialogButtonBox.Ok|QtWidgets.QDialogButtonBox.Save)
-        self.buttonBox.setObjectName("buttonBox")
-        self.gridLayout.addWidget(self.buttonBox, 5, 0, 1, 1)
-        MainWindow.setCentralWidget(self.centralwidget)
-        self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 325, 22))
-        self.menubar.setObjectName("menubar")
-        MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+QT_BEGIN_NAMESPACE
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+class Ui_MainWindow
+{
+public:
+    QWidget *centralwidget;
+    QGridLayout *gridLayout;
+    QLabel *label_4;
+    QLabel *packerLabel;
+    QLabel *boxcutterLabel;
+    QComboBox *osFamily;
+    QComboBox *osVersions;
+    QDialogButtonBox *buttonBox;
+    QMenuBar *menubar;
+    QStatusBar *statusbar;
 
-    def retranslateUi(self, MainWindow):
-        _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_4.setText(_translate("MainWindow", "Virtual Machine Builder"))
-        self.packerLabel.setText(_translate("MainWindow", "TextLabel"))
-        self.boxcutterLabel.setText(_translate("MainWindow", "TextLabel"))
+    void setupUi(QMainWindow *MainWindow)
+    {
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+        MainWindow->resize(325, 250);
+        centralwidget = new QWidget(MainWindow);
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        gridLayout = new QGridLayout(centralwidget);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        QFont font;
+        font.setPointSize(24);
+        label_4->setFont(font);
 
+        gridLayout->addWidget(label_4, 0, 0, 1, 1);
+
+        packerLabel = new QLabel(centralwidget);
+        packerLabel->setObjectName(QString::fromUtf8("packerLabel"));
+
+        gridLayout->addWidget(packerLabel, 1, 0, 1, 1);
+
+        boxcutterLabel = new QLabel(centralwidget);
+        boxcutterLabel->setObjectName(QString::fromUtf8("boxcutterLabel"));
+
+        gridLayout->addWidget(boxcutterLabel, 2, 0, 1, 1);
+
+        osFamily = new QComboBox(centralwidget);
+        osFamily->setObjectName(QString::fromUtf8("osFamily"));
+
+        gridLayout->addWidget(osFamily, 3, 0, 1, 1);
+
+        osVersions = new QComboBox(centralwidget);
+        osVersions->setObjectName(QString::fromUtf8("osVersions"));
+
+        gridLayout->addWidget(osVersions, 4, 0, 1, 1);
+
+        buttonBox = new QDialogButtonBox(centralwidget);
+        buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
+        buttonBox->setToolTipDuration(30);
+        buttonBox->setStandardButtons(QDialogButtonBox::Apply|QDialogButtonBox::Close|QDialogButtonBox::Ok|QDialogButtonBox::Save);
+
+        gridLayout->addWidget(buttonBox, 5, 0, 1, 1);
+
+        MainWindow->setCentralWidget(centralwidget);
+        menubar = new QMenuBar(MainWindow);
+        menubar->setObjectName(QString::fromUtf8("menubar"));
+        menubar->setGeometry(QRect(0, 0, 325, 22));
+        MainWindow->setMenuBar(menubar);
+        statusbar = new QStatusBar(MainWindow);
+        statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        MainWindow->setStatusBar(statusbar);
+
+        retranslateUi(MainWindow);
+
+        QMetaObject::connectSlotsByName(MainWindow);
+    } // setupUi
+
+    void retranslateUi(QMainWindow *MainWindow)
+    {
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
+        label_4->setText(QApplication::translate("MainWindow", "Virtual Machine Builder", nullptr));
+        packerLabel->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+        boxcutterLabel->setText(QApplication::translate("MainWindow", "TextLabel", nullptr));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class MainWindow: public Ui_MainWindow {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // VIRTUALMACHINEBUILDER_H
