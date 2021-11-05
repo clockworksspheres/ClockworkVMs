@@ -1,3 +1,5 @@
+## OBE - (2021-11-06 overcome by events) I've not been able to keep this repo up to date with the boxcutter repositories, and compiled with current versions of Qt/PyQt.
+
 # ClockworkVMs
 PyQt wrapper for public cloud templates and packer by HashiCorp - https://www.packer.io
 
